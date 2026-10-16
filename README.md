@@ -27,6 +27,6 @@ Open a curated lesson, answer one question incorrectly, and finish the session. 
 
 ## Scope and limits
 
-This is a capstone proof of concept, not a measured learning intervention. The interface is in English. Curated content is attributed to OpenStax in each lesson and in [CREDITS.md](CREDITS.md). User-added notes are not fact-checked. External source pages are not cached offline. Browser data disappears when the user clears local storage.
+This is a capstone proof of concept, not a measured learning intervention. The interface is in English. Curated content is attributed to OpenStax in each lesson. User-added notes are not fact-checked. External source pages are not cached offline. Browser data disappears when the user clears local storage.
 
 The app is plain HTML, CSS, and JavaScript with no runtime dependencies. App assets total about 43 KB before compression.
