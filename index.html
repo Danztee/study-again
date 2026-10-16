@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#182b55">
+  <meta name="description" content="Study Again helps you save a lesson, practise it, and return for a short review.">
+  <title>Study Again — Keep what you learn</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Study Again home"><span class="brand-mark" aria-hidden="true">s<span>·</span></span><span>study<br><strong>again</strong></span></a>
+      <p class="sidebar-caption">Study</p>
+      <nav class="nav-list" aria-label="Sections">
+        <button class="nav-item active" data-view="home"><span aria-hidden="true">◫</span> Today</button>
+        <button class="nav-item" data-view="library"><span aria-hidden="true">▤</span> My library</button>
+        <button class="nav-item" data-view="progress"><span aria-hidden="true">◷</span> Progress</button>
+      </nav>
+      <div class="sidebar-bottom"><span class="offline-dot" aria-hidden="true"></span><span id="connection-label">Ready to study offline</span></div>
+    </aside>
+    <div class="main-wrap">
+      <header class="topbar"><button class="mobile-brand" data-view="home" aria-label="Go to Today">study<span>again.</span></button><span class="topbar-note">Saved on this device</span><button id="add-top" class="top-add">+ Save a lesson</button></header>
+      <main id="main" tabindex="-1"></main>
+      <nav class="mobile-nav" aria-label="Mobile sections"><button data-view="home">Today</button><button data-view="library">Library</button><button data-view="progress">Progress</button></nav>
+    </div>
+  </div>
+  <dialog id="add-dialog" aria-labelledby="dialog-title">
+    <form id="lesson-form" method="dialog" class="dialog-body">
+      <button class="dialog-close" type="button" id="close-dialog" aria-label="Close">×</button>
+      <p class="dialog-kicker">Build your library</p><h2 id="dialog-title">Save a lesson</h2>
+      <p class="muted">Add a trustworthy source and a short note. We’ll make a recall session you can use offline.</p>
+      <label for="lesson-title">Lesson title</label><input id="lesson-title" name="title" maxlength="80" required placeholder="e.g. Solving linear equations">
+      <label for="lesson-url">Source link</label><input id="lesson-url" name="url" type="url" required placeholder="https://…">
+      <label for="lesson-note">What should you remember?</label><textarea id="lesson-note" name="note" rows="4" maxlength="700" required placeholder="Write the main idea in your own words…"></textarea>
+      <p id="form-error" class="form-error" role="alert" hidden></p>
+      <div class="dialog-actions"><button type="button" class="button-subtle" id="cancel-dialog">Cancel</button><button class="button-primary" type="submit">Save lesson</button></div>
+    </form>
+  </dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="Study Again">
+  <rect width="192" height="192" rx="38" fill="#17294e"/>
+  <rect x="26" y="26" width="140" height="140" rx="28" fill="#eaf078"/>
+  <path d="M117 63c-10-8-35-8-43 5-7 10 0 19 19 23 26 5 34 18 24 34-10 16-37 18-53 6" fill="none" stroke="#17294e" stroke-linecap="round" stroke-width="15"/>
+  <circle cx="136" cy="129" r="8" fill="#3157cf"/>
+</svg>
